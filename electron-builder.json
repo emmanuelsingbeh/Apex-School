@@ -1,0 +1,37 @@
+{
+  "appId": "com.apex.university.grading",
+  "productName": "Apex University Grade Galaxy",
+  "directories": {
+    "output": "dist-electron"
+  },
+  "files": [
+    "dist/**/*",
+    "public/electron.js",
+    "node_modules/**/*"
+  ],
+  "main": "public/electron.js",
+  "win": {
+    "target": "nsis",
+    "icon": "public/favicon.ico",
+    "requestedExecutionLevel": "asInvoker"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Apex University Grade Galaxy"
+  },
+  "mac": {
+    "category": "public.app-category.education",
+    "icon": "public/favicon.ico"
+  },
+  "linux": {
+    "target": "AppImage",
+    "icon": "public/favicon.ico"
+  },
+  "extraMetadata": {
+    "homepage": "./",
+    "main": "public/electron.js"
+  }
+}
